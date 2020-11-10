@@ -23,4 +23,4 @@ Build a command-line application that at a minimum allows the user to:
   * Update employee roles
 
 ## Link
-![Weather Dashboard demo](assets/img/Employee-Tracker.mp4)
+![Weather Dashboard demo](assets/img/Employee-Tracker.gif)
