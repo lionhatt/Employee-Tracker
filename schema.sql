@@ -5,15 +5,15 @@ use employee_trackerDB;
 
 create table department (
     id int not null auto_increment,
-    name varchar(30) null,
+    name varchar(30) not null,
     primary key (id)
 );
 
 create table role (
     id int not null auto_increment,
-    title varchar(30) null,
-    salary decimal (10,2) null,
-    department_id int null,
+    title varchar(30) not null,
+    salary decimal (10,2) not null,
+    department_id int not null,
     primary key (id)
 );
 
