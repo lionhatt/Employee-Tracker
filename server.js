@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
 
     user: "root",
 
-    password: "elaine0803",
+    password: "",
     database: "employee_trackerDB"
 });
 
@@ -125,7 +125,6 @@ function addDepartment() {
 async function addRole() {
     try {
         let departments = await getDepartments();
-        console.log(departments);
         inquirer.prompt([
             {
                 name: "title",
@@ -170,7 +169,6 @@ async function addEmployee() {
         let managers = await getEmployee();
         let managersList = managers.map(value => `${value.id}: ${value.first_name} ${value.last_name}`);
         managersList.push("None")
-        console.log("managerList: " + managersList)
 
         inquirer.prompt([
             {
@@ -332,3 +330,5 @@ async function updateRole() {
         console.log(err);
     }
 }
+
+
